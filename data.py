@@ -32,7 +32,7 @@ class DatasetMaker(Dataset):
         return success and encoded is not None and encoded.nbytes >= 1024
 
     # препроцессинг
-    def preprocess(img):
+    def preprocess(self, img):
         resized = cv.resize(img, (256, 128), interpolation=cv.INTER_CUBIC)
         gray = cv.cvtColor(resized, cv.COLOR_BGR2GRAY)
         blurred = cv.GaussianBlur(gray, (5, 5), 0)

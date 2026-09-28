@@ -63,10 +63,10 @@ def train():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     cache = DatasetMaker(
         "train",
-        samples_per_source=None
+        samples_per_source=100
     )
     
-    validation_size = len(cache) * 0.2
+    validation_size = int(len(cache) * 0.2)
     train_size = len(cache) - validation_size
     
     train_data, validation_data = random_split(

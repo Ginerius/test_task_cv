@@ -11,3 +11,4 @@ debug.log
 inference.py
 *.png
 test.py
+*.pt
