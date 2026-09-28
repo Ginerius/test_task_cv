@@ -1,0 +1,13 @@
+.venv
+__pycache__
+.vscode
+cache
+dataset
+dataset_ocr
+rus_dataset
+test
+dataset-metadata.json
+debug.log
+inference.py
+*.png
+test.py
